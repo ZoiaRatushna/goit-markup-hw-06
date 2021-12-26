@@ -750,19 +750,41 @@ li {
 
 }
 
-.form {
-    margin-top: 75px;
-    margin-left: 41px;
-    margin-right: 39px;
-    margin-bottom: 164px;
+.form-title {
+    font-family: var(--main-font);
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-primery-color);
+    margin: 40px 39px 30px 41px;
 }
 
-.form-item {
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* margin-top: 75px; */
+    /* margin-left: 41px; */
+    /* margin-right: 39px; */
+    /* margin-bottom: 164px; */
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
     width: 448px;
 
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--text-color-modal-window);
+    font-family:var(--main-font);
 }    
 
 .form-name {
@@ -787,6 +809,7 @@ li {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-color-modal-window);
+    font-family:var(--main-font);
 }
 
 .agreement {
@@ -794,6 +817,7 @@ li {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    font-family:var(--main-font);
 }
 
 .button-modal-window {
@@ -810,6 +834,7 @@ li {
 
     display: flex;
     align-items: center;
+    font-family:var(--main-font);
     letter-spacing: 0.06em;
     color: #FFFFFF;
     padding: 10px 55px 10px 55px;
