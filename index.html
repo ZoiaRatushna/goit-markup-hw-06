@@ -391,36 +391,35 @@
                 <!-- input-modal-window --> 
     <div role="group">        
           <form class="js-speaker-form">        
-            <div class="form">
                     <h2>Оставьте свои данные, мы вам перезвоним</h2>
-                    <!-- name-modal-window -->
-                    <div class="form-field-name"
-                        <label for="name">Имя</label>
-                        <input type="text" name="name" id="name" autofocus/>
+                    <div class="form">
+                        <!-- name-modal-window -->
+                        <div class="form-item form-name"
+                            <label for="name">Имя</label>
+                            <input type="text" name="name" id="name" autofocus/>
+                        </div>
+                        <!-- tel-modal-window -->
+                        <div class="form-item form-tel"
+                            <label for="tel"> Телефон</label>
+                            <input type="text" name="tel" id="tel" autofocus/>  
+                        </div>
+                        <!-- email-modal-window -->
+                        <div class="form-item form-mail"
+                            <label for="mail">Почта</label>   
+                            <input type="email" name="mail" id="mail" autofocus/> 
+                        </div>
+                        <!--comment-modal-window -->
+                        <div class="form-item form-comment"
+                            <label for="comment">Комментарий</label>
+                            <textarea name="comment" id="comment" rows="8"></textarea>
+                        </div>
+                        <!-- I-agree-with-the-newsletter-modal-window -->
+                        <input type="checkbox" name="" value="" id="">
+                        <h3 class="agree">Соглашаюсь с рассылкой и принимаю <a class="agreement" href="#">Условия договора</a></h3>
+                        <!-- button-send-comment-modal-window -->
+                        <button class="button-modal-window" type="submit">Отправить </button>
                     </div>
-                    <!-- tel-modal-window -->
-                    <div class="form-field-tel"
-                        <label for="tel"> Телефон</label>
-                        <input type="text" name="tel" id="tel" autofocus/>  
-                    </div>
-                    <!-- email-modal-window -->
-                    <div class="form-field-mail"
-                        <label for="mail">Почта</label>   
-                        <input type="email" name="mail" id="mail" autofocus/> 
-                    </div>
-                    <!--comment-modal-window -->
-                    <div class="form-field-comment"
-                        <label for="comment">Комментарий</label>
-                        <textarea name="comment" id="comment" rows="8"></textarea>
-                    </div>
-            </div>
-                <!-- I-agree-with-the-newsletter-modal-window -->
-                    <input type="checkbox" name="" value="" id="">
-                    <h3 class="Agree">Соглашаюсь с рассылкой и принимаю <a class="Terms-of-an-agreement" href="#">Условия договора</a></h3>
-                <!-- button-send-comment-modal-window -->
-                  <button class="button-modal-window" type="submit">Отправить </button>
-        </form> 
-        </div>     
+        </form>   
     </div>
 </div>
     <script src="./js/modal.js"></script>

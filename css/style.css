@@ -746,36 +746,50 @@ li {
     box-sizing: border-box;
 }
 
+.js-speaker-form {
+
+}
+
 .form {
+    margin-top: 75px;
     margin-left: 41px;
     margin-right: 39px;
-    margin-bottom: 28px;
+    margin-bottom: 164px;
 }
 
-.form-field-name {
+.form-item {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 448px;
 
+}    
+
+.form-name {
+    height: 40px;
 }
 
-.form-field-tel {
 
+.form-tel {
+    height: 40px;
 }
 
-.form-field-mail {
-
+.form-mail {
+    height: 40px;
 }
 
-.form-field-comment {
-
+.form-comment {
+    height: 120px;
 }
 
-.Agree {
+.agree {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-color-modal-window);
 }
 
-.Terms-of-an-agreement {
+.agreement {
     color: var(--text-secondary-color);
     font-size: 14px;
     line-height: 1.71;
@@ -783,7 +797,22 @@ li {
 }
 
 .button-modal-window {
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 712px;
+    
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.87;
 
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    padding: 10px 55px 10px 55px;
 }
 
 @keyframes hide {
