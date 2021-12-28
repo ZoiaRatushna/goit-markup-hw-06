@@ -378,6 +378,21 @@
                     </li>
                 </ul>
             </div>
+             <!-- footer-subscribe-to-newsletter -->
+            <div class="reset subscribe">
+                <p class="reset subscribe-text">Подпишитесь на рассылку</p>
+                <div class="reset subscribe-form">
+                    <label for="mail" class="subscribe-email"></label>
+                    <input class="subscribe-input" placeholder="E-mail"></input>
+                
+                    <button class="subscribe-button" type="button">Подписаться
+                        <svg width="12px" height="12px">
+                            <use class="icon-normal" href="./images/icons/icons.svg#name_modal"></use>
+                            <use class="icon-hover" href="./images/icons/icons.svg#name_modal1"></use>
+                        </svg>    
+                    </button>
+                </div>
+            </div>
         </div>
     </footer>
     <!-- modal-window -->
@@ -388,40 +403,67 @@
                     <use href="./images/icons/icons.svg#icon-close"></use>
                 </svg>
             </button>
-                <!-- input-modal-window --> 
-    <div role="group">        
-          <form class="js-speaker-form">        
+            <!-- input-modal-window --> 
+            <div role="group">        
+                <form class="js-speaker-form">        
                     <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
                     <div class="form">
                         <!-- name-modal-window -->
-                        <div class="form-field form-name"
-                            <label for="name">Имя</label>
-                            <input type="text" name="name" id="name" autofocus/>
+                        <div class="form-field">
+                            <label class="form-label" for="name">Имя</label>    
+                            <input class="form-input" type="text" name="name" id="name"/>
+                            <span class="icon-modal">
+                                <svg width="12px" height="12px">
+                                    <use class="icon-normal" href="./images/icons/icons.svg#name_modal"></use>
+                                    <use class="icon-hover" href="./images/icons/icons.svg#name_modal1"></use>
+                                </svg>
+                            </span>       
                         </div>
                         <!-- tel-modal-window -->
-                        <div class="form-field form-tel"
-                            <label for="tel"> Телефон</label>
-                            <input type="text" name="tel" id="tel" autofocus/>  
+                        <div class="form-field">
+                            <label class="form-label" for="tel"> Телефон</label>    
+                            <input class="form-input" type="text" name="tel" id="tel"/>     
+                            <span class="icon-modal">
+                                <svg width="13px" height="13px">
+                                    <use class="icon-normal" href="./images/icons/icons.svg#tel_modal"></use>
+                                    <use class="icon-hover" href="./images/icons/icons.svg#tel_modal1"></use>
+                                </svg>
+                            </span>       
                         </div>
                         <!-- email-modal-window -->
-                        <div class="form-field form-mail"
-                            <label for="mail">Почта</label>   
-                            <input type="email" name="mail" id="mail" autofocus/> 
+                        <div class="form-field">
+                            <label class="form-label" for="mail">Почта</label>    
+                            <input class="form-input" type="email" name="mail" id="mail"/>          
+                            <span class="icon-modal">
+                                <svg width="15px" height="12px">
+                                    <use class="icon-normal" href="./images/icons/icons.svg#email_modal"></use>
+                                    <use class="icon-hover" href="./images/icons/icons.svg#email_modal1"></use>
+                                </svg>
+                            </span>       
                         </div>
                         <!--comment-modal-window -->
-                        <div class="form-field form-comment"
-                            <label for="comment">Комментарий</label>
+                        <div class="form-field form-comment">
+                            <label class="form-label" for="comment">Комментарий</label>
                             <textarea name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
                         </div>
                         <!-- I-agree-with-the-newsletter-modal-window -->
-                        <input type="checkbox" name="" value="" id="">
-                        <h3 class="agree">Соглашаюсь с рассылкой и принимаю <a class="agreement" href="#">Условия договора</a></h3>
+                        <label>
+                            <input class="checkbox" type="checkbox" name="" value="" id="">
+                            <span class="icon-modal">
+                                <svg width="15px" height="12px">
+                                    <use class="icon-normal" href="./images/icons/icons.svg#check_off"></use>
+                                    <use class="icon-hover" href="./images/icons/icons.svg#check_on"></use>
+                                </svg>
+                            </span>  
+                            <h3 class="agree">Соглашаюсь с рассылкой и принимаю <a class="agreement" href="#">Условия договора</a></h3>
+                        </label>
                         <!-- button-send-comment-modal-window -->
-                        <button class="button-modal-window" type="submit">Отправить </button>
+                        <button class="button-modal-window" type="submit">Отправить</button>
                     </div>
-        </form>   
+                </form>   
+            </div>
+        </div>
     </div>
-</div>
     <script src="./js/modal.js"></script>
     <script>      
         (() =>
@@ -436,6 +478,6 @@
         e.currentTarget.reset();          
         });     
          })();    
-        </script>
+    </script>
 </body>
 </html>

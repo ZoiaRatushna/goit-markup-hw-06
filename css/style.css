@@ -679,6 +679,68 @@ li {
     display: block;
 }
 
+/* footer-subscribe*/
+.subscribe {
+    display: flex;
+    padding-top: 72px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 93px;
+}
+
+.subscribe-form {
+    display: flex;
+}
+
+.subscribe-text {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.subscribe-email {
+ 
+}
+
+.subscribe-input {
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 12px;
+
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-family: var(--main-font);
+    background: #2F303A;
+}
+
+.subscribe-button {
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em; 
+    color: #FFFFFF;
+}
+
+
 /* modal-window */
 .modal {
     cursor: not-allowed;
@@ -764,44 +826,69 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /* margin-top: 75px; */
-    /* margin-left: 41px; */
-    /* margin-right: 39px; */
-    /* margin-bottom: 164px; */
 }
-
+  
 .form-field {
     display: flex;
+    position: relative;
     flex-direction: column;
-    margin-bottom: 28px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    box-sizing: border-box;
-    border-radius: 4px;
-    width: 448px;
-
+    padding-bottom: 16px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: var(--text-color-modal-window);
     font-family:var(--main-font);
-}    
+}   
 
-.form-name {
-    height: 40px;
+.form-label {
+    position: absolute;
+    top: 0;
+    font-size: 12px;
+    line-height: 1.71;
+    letter-spacing: 0.01em;
+    color: var(--text-color-modal-window);
 }
 
-
-.form-tel {
+.form-input { 
+    margin: 0;
+    font: inherit;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 42px;
+    width: 448px;
     height: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);   
 }
 
-.form-mail {
-    height: 40px;
+.form-input:focus + .form-label {
+    border: 1px solid var(--text-secondary-color);
+}
+
+.icon-modal {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+
+    display: inline-block;
+    background-color: var(--text-secondary-color);
 }
 
 .form-comment {
     height: 120px;
+    width: 448px;
+    margin-bottom: 0;
+}
+.checkbox {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .agree {
@@ -810,6 +897,7 @@ li {
     letter-spacing: 0.03em;
     color: var(--text-color-modal-window);
     font-family:var(--main-font);
+    margin: 0 0 0 7px;
 }
 
 .agreement {
@@ -818,15 +906,13 @@ li {
     line-height: 1.71;
     letter-spacing: 0.03em;
     font-family:var(--main-font);
+    margin: 0 0 0 0;
 }
 
 .button-modal-window {
     width: 200px;
-    height: 50px;
-    left: 700px;
-    top: 712px;
-    
-    background: #2196F3;
+    height: 50px; 
+    background: var(--text-secondary-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     font-size: 16px;
@@ -834,9 +920,10 @@ li {
 
     display: flex;
     align-items: center;
+    text-align: center;
+    color: #FFFFFF;
     font-family:var(--main-font);
     letter-spacing: 0.06em;
-    color: #FFFFFF;
     padding: 10px 55px 10px 55px;
 }
 
